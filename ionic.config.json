@@ -1,0 +1,7 @@
+{
+  "name": "ionicPWA",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
