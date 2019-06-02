@@ -4,6 +4,13 @@ ion-input{
     }
 .foto{
     width: 100%;
-    height: 300px;
+
     
 }
+
+ion-toolbar{
+    --background : red;
+    }
+    ion-title{
+      --color: white;
+    }

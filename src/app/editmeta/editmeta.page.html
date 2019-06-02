@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>editmeta</ion-title>
+    <ion-title>Nova Meta</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,25 +10,25 @@
     <ion-list>
       <ion-item>
         <ion-label position="stacked">Qual seu sonho:</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="sonho"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Descreva-o:</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="descricao"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Quanto tempo pretende adquirir:</ion-label>
-        <ion-input type="date"></ion-input>
+        <ion-input type="date" [(ngModel)]="bens"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Insira uma foto:</ion-label>
-        <ion-input class="foto" type="file"></ion-input>
+        <ion-input class="foto" [(ngModel)]="url" ></ion-input>
       </ion-item>
     </ion-list>
 
 
 
 
-  <ion-button color="danger">Cancelar</ion-button>
-  <ion-button color="success">Salvar</ion-button>
+  <ion-button color="danger" (click)="onVoltar()">Cancelar</ion-button>
+  <ion-button color="success" (click)="onConfirmar();onVoltar(1);onRefresh()">Salvar</ion-button>
 </ion-content>

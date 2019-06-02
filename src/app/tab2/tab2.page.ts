@@ -10,9 +10,6 @@ export class Tab2Page {
 
   constructor(private router : Router) {}
 
-
-
-
   onEdit( id: any){
     this.router.navigate(['editmeta']);
   }
